@@ -589,7 +589,7 @@ z-index: 15;
                     <option value="line15">15.二つ窓</option>
                     <option value="line16">16.電影クロスゲージ</option>
                 </select>
-                <button class="random-btn" id="randomBtn">🤯</button>
+                <!-- <button class="random-btn" id="randomBtn">🤯</button>  -->
             </div>
             <input type="file" id="fileInput" accept="image/*">
         </div>
@@ -1792,6 +1792,7 @@ processImageInChunks(downloadCanvas, downloadCtx, outputSize, scale, pitch, roll
         });
         
         // ランダム化機能
+        /* ランダム化機能はコメント化　2025/08/25
         function randomizeAllSliders() {
             const sliderConfigs = [
                 { id: 'scaleSlider', valueId: 'scaleValue', inputId: 'scaleInput', unit: '', tempVar: 'tempScale' },
@@ -1839,7 +1840,7 @@ processImageInChunks(downloadCanvas, downloadCtx, outputSize, scale, pitch, roll
         
         // ランダムボタンのイベント
         document.getElementById('randomBtn').addEventListener('click', randomizeAllSliders);
-        
+        */
         
 function incrementSlider(sliderId) {
     const slider = document.getElementById(sliderId);
